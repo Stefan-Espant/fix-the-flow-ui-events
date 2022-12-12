@@ -3,10 +3,12 @@
   --primary: #fff;
   --secondary: #050840;
   --highlight-primary: #7ce7c9;
+  --highlight-angry: crimson;
   --highlight-secondary: #9d7beb;
   --radius: 0.5rem;
   --pill: 2rem;
   --line: 0.1rem;
+  --cubic-bezier: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 * {
   box-sizing: border-box;
@@ -39,6 +41,54 @@ a:hover {
 
 /* UI Event Classes */
 
+a[href="#frontend"] {
+position: relative;
+}
+
+a[href="#design"] {
+
+}
+
+a[href="#and"] {
+
+}
+
+a[href="#development"] {
+
+}
+
+a[href="#sprint-5"] {
+
+}
+
+a[href="#fix"] {
+
+}
+
+a[href="#the"] {
+
+}
+
+a[href="#flow"] {
+
+}
+
+a[href="#user"] {
+
+}
+
+a[href="#interface"] {
+
+}
+
+a[href="#events"]{
+background: pink;
+}
+a[href="#feedback"]{
+  background: green;
+}
+
+
 /* Jump animation on the interaction link */
 a:nth-of-type(12) {
   position: relative;
@@ -49,7 +99,7 @@ a:nth-of-type(12) {
 
 .jump {
   animation-name: jump;
-  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-timing-function: var(--cubic-bezier);
   animation-duration: 1.2s;
   animation-iteration-count: 1;
 }
@@ -79,3 +129,303 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+.shrink {
+  animation-name: shrink;
+  animation-duration: 0.8s;
+  animation-timing-function: var(--cubic-bezier);
+  animation-iteration-count: infinite;
+}
+
+@keyframes shrink {
+  0%{
+    transform: scale(1.0);
+  }
+
+  66% {
+    transform: scale(0.6);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(1.0);
+  }
+}
+
+.hyper {
+  animation-name: hyper;
+  animation-duration: 0.2s;
+  animation-timing-function: var(--cubic-bezier);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hyper {
+  0%{
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(-1em);
+  }
+
+  50% {
+    transform: translateY(0.5em);
+  }
+
+  66% {
+    transform: translateY(-2em);
+  }
+
+  80% {
+    transform: translateY(0.5em);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.spinning {
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-timing-function: var(--cubic-bezier);
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(180deg);
+  }
+
+  66% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.triggered {
+  animation-name: triggered;
+  animation-duration: 0.2s;
+  animation-timing-function: var(--cubic-bezier);
+  animation-iteration-count: infinite;
+  color: var(--highlight-angry);
+  border: var(--line) solid var(--highlight-angry);
+  
+}
+
+@keyframes triggered {
+  0% {
+    transform: translateX(0.2em)
+  }
+
+  25% {
+    transform: translateX(-0.2em)
+  }
+
+  50% {
+    transform: translateX(0.2em) 
+  }
+
+  75% {
+    transform: translateX(-0.2em)
+  }
+
+  100% {
+    transform: translateX(0em)
+  }
+}
+
+.disco { 
+  animation-name: disco;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: infinite;
+  color: var(--primary);
+  border: var(--line) solid var(--primary);
+}
+
+@keyframes disco {
+  0% {
+    background-color: red;
+    transform: translate(0em, 0em);
+  }
+
+  10% {
+    background-color: orange;  
+    transform: translate(0.5em, 0.5em) rotate(10deg);
+  }
+
+  33% {
+    background-color: turquoise;
+    transform: translate(-0.5em, -0.5em);
+  }
+
+  66% {
+    background-color: dodgerblue;
+    transform: translate(0.5em, 0.5em);
+    transform: translate(0.5em, 0.5em) rotate(-20deg);
+  }
+
+  80% {
+    background-color: violet;
+    transform: translate(-0.5em, -0.5em);
+  }
+
+  100% {
+    background-color: red;
+    transform: translate(0em, 0em);
+  }
+}
+
+.swing { 
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(0em) translateY(0em) rotate(0deg);
+  }
+
+  40%{
+    transform: translateX(-1em)  translateY(-1em) rotate(60deg);
+  }
+
+  50% {
+    transform: translateX(0em)  translateY(-0.5em) rotate(0deg);
+  }
+
+  60% {
+    transform: translateX(1em)  translateY(-1em) rotate(-60deg);
+  }
+
+  70% {
+    transform: translateX(0em)  translateY(-0.5em) rotate(0deg);
+  }
+
+  80% {
+    transform: translateX(-1em)  translateY(-1em)  rotate(60deg);
+  }
+
+  90% {
+    transform: translateX(0em) translateY(0em) rotate(0deg);
+  }
+}
+
+.fade-up { 
+  animation-name: fade-up;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+
+  33% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+
+  66% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+
+}
+
+.clap { 
+  animation-name: clap;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clap {
+  0% {
+    transform: rotateX(0);
+  }
+
+  33% {
+    transform: rotateX(45deg) rotateY(10deg);
+  }
+
+  66% {
+    transform: rotateX(45deg) rotateY(50deg);
+  }
+
+  80% {
+    transform: rotateX(50deg) rotateY(-10deg);
+  }
+
+  100% {
+    transform: rotateX(0);
+  }
+
+}
+
+.squeeze { 
+  animation-name: squeeze;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes squeeze {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+
+  10% {
+    transform: scaleX(0.6);
+  }
+
+  66% {
+    transform: scaleX(1.2);
+  }
+
+}
+
+.flash { 
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(100vw);
+  }
+
+  66% {
+    transform: translateX(-100vw); 
+  }
+
+  100% {
+    transform: translateX(0); 
+  }
+}
