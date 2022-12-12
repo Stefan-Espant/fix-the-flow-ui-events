@@ -41,61 +41,11 @@ a:hover {
 
 /* UI Event Classes */
 
-a[href="#frontend"] {
-position: relative;
+a {
+  position: relative;
 }
-
-a[href="#design"] {
-
-}
-
-a[href="#and"] {
-
-}
-
-a[href="#development"] {
-
-}
-
-a[href="#sprint-5"] {
-
-}
-
-a[href="#fix"] {
-
-}
-
-a[href="#the"] {
-
-}
-
-a[href="#flow"] {
-
-}
-
-a[href="#user"] {
-
-}
-
-a[href="#interface"] {
-
-}
-
-a[href="#events"]{
-background: pink;
-}
-a[href="#feedback"]{
-  background: green;
-}
-
 
 /* Jump animation on the interaction link */
-a:nth-of-type(12) {
-  position: relative;
-  background: var(--highlight-secondary);
-  color: var(--secondary);
-  border-color: var(--secondary);
-}
 
 .jump {
   animation-name: jump;
