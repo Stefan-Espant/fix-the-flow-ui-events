@@ -8,7 +8,7 @@ function jumpHandler() {
 }
 
 
-// skrinking events
+// shrinking events
 const frontend = document.querySelector('a[href="#frontend"]')
 
 frontend.addEventListener('click', shrinkhandler)
@@ -75,13 +75,13 @@ function fadeUphandler() {
   the.classList.toggle('fade-up')
 }
 
-//slice event
+//flutter event
 const flow = document.querySelector('a[href="#flow"]')
 
-flow.addEventListener('wheel', claphandler)
+flow.addEventListener('wheel', flutterhandler)
 
-function claphandler() {
-  flow.classList.toggle('clap')
+function flutterhandler() {
+  flow.classList.toggle('flutter')
 }
 
 //squeeze event

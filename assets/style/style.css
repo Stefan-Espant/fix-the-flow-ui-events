@@ -303,14 +303,14 @@ a {
 
 }
 
-.clap { 
-  animation-name: clap;
+.flutter { 
+  animation-name: flutter;
   animation-duration: 0.8s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-@keyframes clap {
+@keyframes flutter {
   0% {
     transform: rotateX(0);
   }
