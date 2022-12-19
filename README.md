@@ -10,7 +10,7 @@ In deze deeltaak heb ik tien verschillende UI-events weten toe te passen op anch
 
 ## Experimenten
 <!-- In de Experimenten beschrijf je wat je per experimnet hebt gedaan en documenteer je de code aan de hand van voorbeelden -->
-Voor het event heb ik geexpirimenteerd met diverse input manieren. 
+Voor het event heb ik geexpirimenteerd met diverse input manieren.<br>
 Zoals slepen, dubbel klikken, hoveren, scrollen met een muiswiel etc. 
 
 
